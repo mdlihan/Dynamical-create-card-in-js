@@ -1,0 +1,85 @@
+      //<div class="card">
+           //<h4>Card title 1</h4>
+         //  <p>card body 1</p>
+        //</div>
+        
+  
+  
+  
+ var cards=[
+      {
+        titel:'Card Tite 1',
+        body:'Card body 1'
+      },
+       {
+        titel:'Card Tite 2',
+        body:'Card body 2'
+      },
+      {
+        titel:'Card Tite 3',
+        body:'Card body 3'
+      },
+      {
+        titel:'Card Tite 4',
+        body:'Card body 4'
+      },
+         {
+        titel:'Card Tite 5',
+        body:'Card body 5'
+      },
+       {
+        titel:'Card Tite 6',
+        body:'Card body 6'
+      },
+      {
+        titel:'Card Tite 7',
+        body:'Card body 7'
+      },
+      {
+        titel:'Card Tite 8',
+        body:'Card body 8'
+      },   {
+        titel:'Card Tite 9',
+        body:'Card body 9'
+      },
+       {
+        titel:'Card Tite 10',
+        body:'Card body 10'
+      },
+      {
+        titel:'Card Tite 11',
+        body:'Card body 11'
+      },
+      {
+        titel:'Card Tite 12',
+        body:'Card body 12'
+      },   {
+        titel:'Card Tite 13',
+        body:'Card body 13'
+      },
+       {
+        titel:'Card Tite 14',
+        body:'Card body 14'
+      },
+      {
+        titel:'Card Tite 15',
+        body:'Card body 15'
+      },
+      {
+        titel:'Card Tite 16',
+        body:'Card body 16'
+      },
+      
+   ]
+var container=document.querySelector('.container')
+const create=()=>{
+   cards.map((ele)=>{
+     console.log(ele)
+     const newdiv=document.createElement('div')
+      newdiv.classList.add('card')
+      newdiv.innerHTML=`<h4>${ele.titel}</h4>
+                        <p>${ele.body}</p>`
+      container.appendChild(newdiv)                  
+   })
+}
+create();
